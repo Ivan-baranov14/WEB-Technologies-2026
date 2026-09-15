@@ -1,10 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 0 0 28px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 36px;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #1e293b;
+  border-left: 4px solid #2563eb;
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.profile-card p {
+  margin: 8px 0;
+}
+
+.works-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.works-list li {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.works-list li a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.works-list li p {
+  margin: 6px 0 0 0;
+  color: #475569;
+}
+
+footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
 .legend {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 15px 0;
-  font-size: 0.9em;
+  margin: 15px 0 20px 0;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
 }
 
 .legend-item {
@@ -18,40 +154,51 @@
   width: 18px;
   height: 18px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
 }
 
-.badge.lecture, .schedule-table td.lecture {
-  background-color: #fff8dc; 
+.badge.lecture,
+.schedule-table td.lecture {
+  background-color: #fff8dc;
 }
 
-.badge.practical, .schedule-table td.practical {
-  background-color: #e6f9e6; 
+.badge.practical,
+.schedule-table td.practical {
+  background-color: #e6f9e6;
 }
 
-.badge.lab, .schedule-table td.lab {
-  background-color: #d8edff; 
+.badge.lab,
+.schedule-table td.lab {
+  background-color: #d8edff;
 }
 
-.badge.empty, .schedule-table td.empty-cell {
-  background-color: #f1f1f1; 
-  color: #777;
+.badge.empty,
+.schedule-table td.empty-cell {
+  background-color: #f1f5f9;
+  color: #64748b;
   text-align: center;
 }
 
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+}
 
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85em;
+  font-size: 0.85rem;
   text-align: center;
 }
 
 .schedule-table th {
-  background-color: #63b3ed;
+  background-color: #4299e1;
   color: #ffffff;
-  padding: 10px 6px;
-  border: 1px solid #b8daff;
+  padding: 12px 8px;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
 }
 
 .schedule-table td {
@@ -62,9 +209,10 @@
 }
 
 .day-header td {
-  background-color: #4299e1 !important;
+  background-color: #2b6cb0 !important;
   color: #ffffff;
   font-weight: bold;
   text-align: left;
-  padding-left: 12px;
+  padding-left: 14px;
+  font-size: 0.9rem;
 }
