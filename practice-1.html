@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична робота №1 — Розклад занять</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Практична робота №1: Основи HTML</h1>
+    <nav>
+      <a href="../index.html">&larr; Повернутися на головну сторінку</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Розклад навчальних занять на місяць (Вересень – Жовтень 2026)</h2>
+      <p>Розклад занять складено згідно з електронним розкладом університету. Формат занять: Дистанційно.</p>
+
+
+      <div class="legend">
+        <span class="legend-item"><span class="badge lecture"></span> Лекції [Лк]</span>
+        <span class="legend-item"><span class="badge practical"></span> Практичні [Пз]</span>
+        <span class="legend-item"><span class="badge lab"></span> Лабораторні [Лб]</span>
+        <span class="legend-item"><span class="badge empty"></span> Немає занять</span>
+      </div>
+
+      <div class="table-container">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th style="width: 100px;">День / Час</th>
+              <th>14.09 – 18.09.2026</th>
+              <th>21.09 – 25.09.2026</th>
+              <th>28.09 – 02.10.2026</th>
+              <th>05.10 – 09.10.2026</th>
+              <th>12.10 – 16.10.2026</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr class="day-header">
+              <td colspan="6">ПОНЕДІЛОК (Пн)</td>
+            </tr>
+            <tr>
+              <td><strong>2 пара</strong><br><small>09:30 – 10:50</small></td>
+              <td class="empty-cell" rowspan="5">Немає занять /<br>Самостійна робота</td>
+              <td class="lecture"><strong>WEB тех.-2016 [Лк]</strong><br>ауд. Дистанц.<br><em>Дзюба В.В.</em></td>
+              <td class="lecture"><strong>ЗВвБ-2017 [Лк]</strong><br>ауд. Дистанц.<br><em>Пильнова В.П.</em></td>
+              <td class="lecture"><strong>WEB тех.-2016 [Лк]</strong><br>ауд. Дистанц.<br><em>Дзюба В.В.</em></td>
+              <td class="lecture"><strong>ЗВвБ-2017 [Лк]</strong><br>ауд. Дистанц.<br><em>Пильнова В.П.</em></td>
+            </tr>
+            <tr>
+              <td><strong>3 пара</strong><br><small>11:10 – 12:30</small></td>
+              <td class="lecture"><strong>ПРО-2017 [Лк]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="lecture"><strong>ДТМІ-2018 [Лк]</strong><br>ауд. Дистанц.<br><em>Бученко І.А.</em></td>
+              <td class="lecture"><strong>ПРО-2017 [Лк]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="lecture"><strong>ДТМІ-2018 [Лк]</strong><br>ауд. Дистанц.<br><em>Бученко І.А.</em></td>
+            </tr>
+            <tr>
+              <td><strong>4 пара</strong><br><small>12:40 – 14:00</small></td>
+              <td class="empty-cell">—</td>
+              <td class="lecture"><strong>МЗШІ-2020 [Лк]</strong><br>ауд. Дистанц.<br><em>Звенигородський О.С.</em></td>
+              <td class="empty-cell">—</td>
+              <td class="lecture"><strong>МЗШІ-2020 [Лк]</strong><br>ауд. Дистанц.<br><em>Звенигородський О.С.</em></td>
+            </tr>
+            <tr>
+              <td><strong>5 пара</strong><br><small>14:10 – 15:30</small></td>
+              <td class="lecture"><strong>ПРО-2017 [Лк]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="empty-cell">—</td>
+              <td class="lecture"><strong>ПРО-2017 [Лк]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="empty-cell">—</td>
+            </tr>
+            <tr>
+              <td><strong>6 пара</strong><br><small>15:40 – 17:00</small></td>
+              <td class="empty-cell">—</td>
+              <td class="lecture"><strong>ХТ-15 [Лк]</strong><br>ауд. Дистанц.<br><em>Шикула О.М.</em></td>
+              <td class="empty-cell">—</td>
+              <td class="lecture"><strong>ХТ-15 [Лк]</strong><br>ауд. Дистанц.<br><em>Шикула О.М.</em></td>
+            </tr>
+
+
+            <tr class="day-header">
+              <td colspan="6">ВІВТОРОК (Вт)</td>
+            </tr>
+            <tr>
+              <td><strong>1 пара</strong><br><small>08:00 – 09:20</small></td>
+              <td colspan="5" class="empty-cell">Занять немає</td>
+            </tr>
+
+
+            <tr class="day-header">
+              <td colspan="6">СЕРЕДА (Ср)</td>
+            </tr>
+            <tr>
+              <td><strong>2 пара</strong><br><small>09:30 – 10:50</small></td>
+              <td class="lab"><strong>ПРО-2017 [Лб]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="practical"><strong>ПРО-2017 [Пз]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="lab"><strong>ПРО-2017 [Лб]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="practical"><strong>ПРО-2017 [Пз]</strong><br>ауд. Дистанц.<br><em>Торошанко Я.І.</em></td>
+              <td class="empty-cell" rowspan="4">Занять немає</td>
+            </tr>
+            <tr>
+              <td><strong>3 пара</strong><br><small>11:10 – 12:30</small></td>
+              <td class="practical"><strong>МЗШІ-2020 [Пз]</strong><br>ауд. Дистанц.<br><em>Звенигородський О.С.</em></td>
+              <td class="lab"><strong>МЗШІ-2020 [Лб]</strong><br>ауд. Дистанц.<br><em>Звенигородський О.С.</em></td>
+              <td class="practical"><strong>МЗШІ-2020 [Пз]</strong><br>ауд. Дистанц.<br><em>Звенигородський О.С.</em></td>
+              <td class="lab"><strong>МЗШІ-2020 [Лб]</strong><br>ауд. Дистанц.<br><em>Звенигородський О.С.</em></td>
+            </tr>
+            <tr>
+              <td><strong>4 пара</strong><br><small>12:40 – 14:00</small></td>
+              <td class="lab"><strong>ДТМІ-2018 [Лб]</strong><br>ауд. Дистанц.<br><em>Бученко І.А.</em></td>
+              <td class="practical"><strong>ДТМІ-2018 [Пз]</strong><br>ауд. Дистанц.<br><em>Бученко І.А.</em></td>
+              <td class="lab"><strong>ДТМІ-2018 [Лб]</strong><br>ауд. Дистанц.<br><em>Бученко І.А.</em></td>
+              <td class="practical"><strong>ДТМІ-2018 [Пз]</strong><br>ауд. Дистанц.<br><em>Бученко І.А.</em></td>
+            </tr>
+            <tr>
+              <td><strong>5 пара</strong><br><small>14:10 – 15:30</small></td>
+              <td class="empty-cell">—</td>
+              <td class="practical"><strong>ХТ-15 [Пз]</strong><br>ауд. Дистанц.<br><em>Шикула О.М.</em></td>
+              <td class="empty-cell">—</td>
+              <td class="practical"><strong>ХТ-15 [Пз]</strong><br>ауд. Дистанц.<br><em>Шикула О.М.</em></td>
+            </tr>
+
+
+            <tr class="day-header">
+              <td colspan="6">ЧЕТВЕР (Чт)</td>
+            </tr>
+            <tr>
+              <td><strong>1 пара</strong><br><small>08:00 – 09:20</small></td>
+              <td class="practical"><strong>ЗВвБ-2017 [Пз]</strong><br>ауд. Дистанц.<br><em>Пильнова В.П.</em></td>
+              <td class="empty-cell">—</td>
+              <td class="practical"><strong>ЗВвБ-2017 [Пз]</strong><br>ауд. Дистанц.<br><em>Пильнова В.П.</em></td>
+              <td class="empty-cell">—</td>
+              <td class="empty-cell" rowspan="2">Занять немає</td>
+            </tr>
+            <tr>
+              <td><strong>2 пара</strong><br><small>09:30 – 10:50</small></td>
+              <td class="practical"><strong>WEB тех.-2016 [Пз]</strong><br>ауд. Дистанц.<br><em>Дзюба В.В.</em></td>
+              <td class="practical"><strong>WEB тех.-2016 [Пз]</strong><br>ауд. Дистанц.<br><em>Дзюба В.В.</em></td>
+              <td class="practical"><strong>WEB тех.-2016 [Пз]</strong><br>ауд. Дистанц.<br><em>Дзюба В.В.</em></td>
+              <td class="practical"><strong>WEB тех.-2016 [Пз]</strong><br>ауд. Дистанц.<br><em>Дзюба В.В.</em></td>
+            </tr>
+
+
+            <tr class="day-header">
+              <td colspan="6">П'ЯТНИЦЯ (Пт)</td>
+            </tr>
+            <tr>
+              <td><strong>1 пара</strong><br><small>08:00 – 09:20</small></td>
+              <td colspan="5" class="empty-cell">Занять немає</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Повернутися до переліку завдань</a></p>
+    <p>&copy; 2026 Іван Баранов</p>
+  </footer>
+
+</body>
+</html>
