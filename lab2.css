@@ -1,0 +1,81 @@
+/* 1. Перший елемент <li> — жирний шрифт */
+li:first-child {
+    font-weight: bold;
+}
+
+/* 2. Посилання, які є останніми дочірніми елементами свого батька */
+a:last-child {
+    color: blue;
+}
+
+/* 3. Вимкнені поля введення — сірий фон */
+input:disabled {
+    background-color: #d1d5db;
+}
+
+/* 4. Абзаци, які є прямими дочірніми елементами <div> */
+div > p {
+    font-weight: 600;
+}
+
+/* 5. Посилання, href яких починається з https */
+a[href^="https"] {
+    color: green;
+}
+
+/* 6. Поля введення типу text — суцільна чорна рамка 1 px */
+input[type="text"] {
+    border: 1px solid #000;
+}
+
+/* 7. Перші та останні дочірні елементи <li> */
+li:first-child,
+li:last-child {
+    font-size: 24px;
+}
+
+/* 8. Усі абзаци-нащадки елементів <div> */
+div p {
+    font-size: 16px;
+}
+
+/* 9. Позначені прапорці */
+input:checked {
+    background-color: lightblue;
+    accent-color: lightblue;
+}
+
+/* 10. Посилання — прямі дочірні елементи <li> */
+li > a {
+    text-decoration: underline;
+}
+
+/* 11. Парні елементи <li> */
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+/* 12. Увімкнені поля введення типу text */
+input[type="text"]:not(:disabled) {
+    background-color: silver;
+}
+
+/* 13. Абзаци, які є першими дочірніми елементами свого батька */
+p:first-child {
+    font-size: 24px;
+}
+
+/* 14. Елемент <li> з класом special */
+li.special {
+    text-decoration: line-through;
+}
+
+/* 15. Перша літера кожного абзацу */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* 16. Додаємо стрілку після кожного посилання */
+a::after {
+    content: " ↗";
+}
