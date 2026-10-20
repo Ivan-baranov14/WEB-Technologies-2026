@@ -3,90 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Практична робота №4 — Fullsize клавіатура</title>
-  <link rel="stylesheet" href="practice-4.css?v=4">
+  <title>Практична робота №4 — Тижневий планер</title>
+  <link rel="stylesheet" href="practice-4.css?v=5">
 </head>
 <body>
   <main class="page">
     <a class="back-link" href="../index.html">← На головну</a>
-    <h1>Практична робота №4</h1>
-    <p class="subtitle">Повнорозмірна клавіатура (Fullsize)</p>
-    <p class="description">Розмітка створена за допомогою CSS Grid. Натисніть клавішу, щоб побачити її стан.</p>
+    <h1>Лабораторна робота №4</h1>
+    <p class="subtitle">Використовуючи шаблон розробити сторінку планера.</p>
+    <h2>Вимоги:</h2>
+    <ol class="requirements">
+      <li>Розмітка сторінки створена за допомогою grid.</li>
+      <li>Підібрані кастомні шрифти.</li>
+      <li>Всі чекбокси клікабельні.</li>
+      <li>Всі поля для вводу можна редагувати.</li>
+      <li>Сторінка реагує на зміни розміру екрану (без повноцінної адаптивної верстки).</li>
+    </ol>
 
-    <section class="keyboard-shell" aria-label="Інтерактивна повнорозмірна клавіатура">
-      <div class="cable" aria-hidden="true"></div>
-      <div class="keyboard">
-        <div class="main-board">
-          <div class="key-row function-row">
-            <button class="key esc" data-key="Escape">Esc</button><span class="gap"></span>
-            <button class="key" data-key="F1">F1</button><button class="key" data-key="F2">F2</button><button class="key" data-key="F3">F3</button><button class="key" data-key="F4">F4</button><span class="gap"></span>
-            <button class="key" data-key="F5">F5</button><button class="key" data-key="F6">F6</button><button class="key" data-key="F7">F7</button><button class="key" data-key="F8">F8</button><span class="gap"></span>
-            <button class="key" data-key="F9">F9</button><button class="key" data-key="F10">F10</button><button class="key" data-key="F11">F11</button><button class="key" data-key="F12">F12</button>
-          </div>
-          <div class="key-row number-row">
-            <button class="key" data-key="`">~<br>`</button><button class="key" data-key="1">!<br>1</button><button class="key" data-key="2">@<br>2</button><button class="key" data-key="3">#<br>3</button><button class="key" data-key="4">$<br>4</button><button class="key" data-key="5">%<br>5</button><button class="key" data-key="6">^<br>6</button><button class="key" data-key="7">&amp;<br>7</button><button class="key" data-key="8">*<br>8</button><button class="key" data-key="9">(<br>9</button><button class="key" data-key="0">)<br>0</button><button class="key" data-key="-">_<br>-</button><button class="key" data-key="=">+<br>=</button><button class="key backspace" data-key="Backspace">Backspace</button>
-          </div>
-          <div class="key-row q-row">
-            <button class="key tab" data-key="Tab">Tab</button><button class="key" data-key="Q">Q</button><button class="key" data-key="W">W</button><button class="key" data-key="E">E</button><button class="key" data-key="R">R</button><button class="key" data-key="T">T</button><button class="key" data-key="Y">Y</button><button class="key" data-key="U">U</button><button class="key" data-key="I">I</button><button class="key" data-key="O">O</button><button class="key" data-key="P">P</button><button class="key" data-key="[">{<br>[</button><button class="key" data-key="]">}<br>]</button><button class="key backslash" data-key="\\">|<br>\\</button>
-          </div>
-          <div class="key-row home-row">
-            <button class="key caps" data-key="CapsLock">Caps<br>Lock</button><button class="key" data-key="A">A</button><button class="key" data-key="S">S</button><button class="key" data-key="D">D</button><button class="key" data-key="F">F</button><button class="key" data-key="G">G</button><button class="key" data-key="H">H</button><button class="key" data-key="J">J</button><button class="key" data-key="K">K</button><button class="key" data-key="L">L</button><button class="key" data-key=";">:<br>;</button><button class="key" data-key="'">&quot;<br>'</button><button class="key enter" data-key="Enter">Enter</button>
-          </div>
-          <div class="key-row shift-row">
-            <button class="key shift" data-key="Shift">⇧</button><button class="key" data-key="Z">Z</button><button class="key" data-key="X">X</button><button class="key" data-key="C">C</button><button class="key" data-key="V">V</button><button class="key" data-key="B">B</button><button class="key" data-key="N">N</button><button class="key" data-key="M">M</button><button class="key" data-key=",">&lt;<br>,</button><button class="key" data-key=".">&gt;<br>.</button><button class="key" data-key="/">?<br>/</button><button class="key shift" data-key="Shift">⇧</button>
-          </div>
-          <div class="key-row bottom-row">
-            <button class="key ctrl" data-key="Control">Ctrl</button><button class="key" data-key="Meta">⊞</button><button class="key alt" data-key="Alt">Alt</button><button class="key space" data-key=" "> </button><button class="key alt" data-key="AltGraph">Alt Gr</button><button class="key" data-key="ContextMenu">☰</button><button class="key ctrl" data-key="Control">Ctrl</button>
-          </div>
+    <section class="planner" aria-label="Тижневий планер">
+      <header class="planner-header">
+        <div class="brand">WEEKLY PLAN</div>
+        <label class="line-field">WEEK OF <input aria-label="Тиждень від"></label>
+        <label class="line-field habit">HEALTHY HABIT <input aria-label="Корисна звичка"></label>
+        <div class="checks">
+          <label><span>ROCKED IT</span><input type="checkbox" aria-label="Rocked it"></label>
+          <label><span>ROOM FOR IMPROVEMENT</span><input type="checkbox" aria-label="Room for improvement"></label>
         </div>
-
-        <div class="nav-board">
-          <div class="mini-row"><button class="key" data-key="PrintScreen">PrtSc</button><button class="key" data-key="ScrollLock">ScrLk</button><button class="key" data-key="Pause">Pause</button></div>
-          <div class="nav-grid">
-            <button class="key" data-key="Insert">Ins</button><button class="key" data-key="Home">Home</button><button class="key" data-key="PageUp">PgUp</button>
-            <button class="key" data-key="Delete">Del</button><button class="key" data-key="End">End</button><button class="key" data-key="PageDown">PgDn</button>
-          </div>
-          <div class="arrow-grid"><span></span><button class="key" data-key="ArrowUp">↑</button><span></span><button class="key" data-key="ArrowLeft">←</button><button class="key" data-key="ArrowDown">↓</button><button class="key" data-key="ArrowRight">→</button></div>
-        </div>
-
-        <div class="numpad">
-          <div class="mini-row"><button class="key" data-key="NumLock">Num</button><button class="key" data-key="/">/</button><button class="key" data-key="*">*</button><button class="key" data-key="-">−</button></div>
-          <div class="numpad-grid">
-            <button class="key" data-key="7">7</button><button class="key" data-key="8">8</button><button class="key" data-key="9">9</button><button class="key tall" data-key="+">+</button>
-            <button class="key" data-key="4">4</button><button class="key" data-key="5">5</button><button class="key" data-key="6">6</button>
-            <button class="key" data-key="1">1</button><button class="key" data-key="2">2</button><button class="key" data-key="3">3</button><button class="key tall enter-num" data-key="Enter">Enter</button>
-            <button class="key zero" data-key="0">0</button><button class="key" data-key=".">.</button>
-          </div>
-        </div>
-      </div>
-      <div class="legend"><span><i></i> Звичайна клавіша</span><span><i class="hover-dot"></i> Наведення</span><span><i class="active-dot"></i> Натиснута клавіша</span></div>
+      </header>
+      <aside class="sidebar">
+        <section class="task-list goals">
+          <h3>TOP 3 GOALS</h3>
+          <label class="task"><input type="checkbox" aria-label="Ціль 1"><input class="task-text" aria-label="Текст цілі 1"></label><label class="task"><input type="checkbox" aria-label="Ціль 2"><input class="task-text" aria-label="Текст цілі 2"></label><label class="task"><input type="checkbox" aria-label="Ціль 3"><input class="task-text" aria-label="Текст цілі 3"></label>
+        </section>
+        <section class="task-list everything">
+          <h3>EVERYTHING ELSE</h3>
+          <label class="task"><input type="checkbox" aria-label="Завдання 1"><input class="task-text" aria-label="Текст завдання 1"></label><label class="task"><input type="checkbox" aria-label="Завдання 2"><input class="task-text" aria-label="Текст завдання 2"></label><label class="task"><input type="checkbox" aria-label="Завдання 3"><input class="task-text" aria-label="Текст завдання 3"></label><label class="task"><input type="checkbox" aria-label="Завдання 4"><input class="task-text" aria-label="Текст завдання 4"></label><label class="task"><input type="checkbox" aria-label="Завдання 5"><input class="task-text" aria-label="Текст завдання 5"></label><label class="task"><input type="checkbox" aria-label="Завдання 6"><input class="task-text" aria-label="Текст завдання 6"></label><label class="task"><input type="checkbox" aria-label="Завдання 7"><input class="task-text" aria-label="Текст завдання 7"></label><label class="task"><input type="checkbox" aria-label="Завдання 8"><input class="task-text" aria-label="Текст завдання 8"></label><label class="task"><input type="checkbox" aria-label="Завдання 9"><input class="task-text" aria-label="Текст завдання 9"></label><label class="task"><input type="checkbox" aria-label="Завдання 10"><input class="task-text" aria-label="Текст завдання 10"></label><label class="task"><input type="checkbox" aria-label="Завдання 11"><input class="task-text" aria-label="Текст завдання 11"></label><label class="task"><input type="checkbox" aria-label="Завдання 12"><input class="task-text" aria-label="Текст завдання 12"></label><label class="task"><input type="checkbox" aria-label="Завдання 13"><input class="task-text" aria-label="Текст завдання 13"></label>
+        </section>
+        <section class="task-list next-week">
+          <h3>NEXT WEEK</h3>
+          <label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 1"><input class="task-text" aria-label="Текст завдання наступного тижня 1"></label><label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 2"><input class="task-text" aria-label="Текст завдання наступного тижня 2"></label><label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 3"><input class="task-text" aria-label="Текст завдання наступного тижня 3"></label><label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 4"><input class="task-text" aria-label="Текст завдання наступного тижня 4"></label>
+        </section>
+      </aside>
+      <section class="day monday"><h3>MONDAY <input type="checkbox" aria-label="Понеділок виконано"></h3><textarea aria-label="План на понеділок"></textarea></section>
+      <section class="day tuesday"><h3>TUESDAY <input type="checkbox" aria-label="Вівторок виконано"></h3><textarea aria-label="План на вівторок"></textarea></section>
+      <section class="day wednesday"><h3>WEDNESDAY <input type="checkbox" aria-label="Середа виконано"></h3><textarea aria-label="План на середу"></textarea></section>
+      <section class="day thursday"><h3>THURSDAY <input type="checkbox" aria-label="Четвер виконано"></h3><textarea aria-label="План на четвер"></textarea></section>
+      <section class="day friday"><h3>FRIDAY <input type="checkbox" aria-label="П'ятниця виконано"></h3><textarea aria-label="План на п'ятницю"></textarea></section>
+      <section class="day saturday"><h3>SATURDAY <input type="checkbox" aria-label="Субота виконано"></h3><textarea aria-label="План на суботу"></textarea></section>
+      <section class="day sunday"><h3>SUNDAY <input type="checkbox" aria-label="Неділя виконано"></h3><textarea aria-label="План на неділю"></textarea></section>
+      <footer class="planner-footer"></footer>
     </section>
-    <div class="hint"><strong>Спробуйте клавіатуру</strong><span>Натискайте клавіші мишкою або фізичною клавіатурою.</span><button id="resetKeys" type="button">Скинути</button></div>
   </main>
   <script>
-    const keys = [...document.querySelectorAll('.key[data-key]')];
-    const pressed = new Set();
-    function setKeyState(key, active) {
-      keys.filter(button => button.dataset.key.toLowerCase() === key.toLowerCase())
-        .forEach(button => button.classList.toggle('selected', active));
-    }
-    keys.forEach(button => button.addEventListener('click', () => button.classList.toggle('selected')));
-    document.addEventListener('keydown', event => {
-      if (event.repeat) return;
-      pressed.add(event.key);
-      setKeyState(event.key, true);
-    });
-    document.addEventListener('keyup', event => {
-      pressed.delete(event.key);
-      setKeyState(event.key, false);
-    });
-    window.addEventListener('blur', () => {
-      pressed.forEach(key => setKeyState(key, false));
-      pressed.clear();
-    });
-    document.getElementById('resetKeys').addEventListener('click', () => {
-      keys.forEach(button => button.classList.remove('selected'));
-      pressed.clear();
+    document.querySelectorAll('.planner input[type="text"], .planner textarea, .planner input:not([type])').forEach(field => {
+      field.addEventListener('input', () => field.classList.add('edited'));
     });
   </script>
 </body>
