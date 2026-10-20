@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №4 — Тижневий планер</title>
+  <link rel="stylesheet" href="lab4.css?v=1">
+</head>
+<body>
+  <main class="page">
+    <a class="back-link" href="index.html">← На головну</a>
+    <h1>Лабораторна робота №4</h1>
+    <p class="subtitle">Використовуючи шаблон розробити сторінку планера.</p>
+    <h2>Вимоги:</h2>
+    <ol class="requirements">
+      <li>Розмітка сторінки створена за допомогою grid.</li>
+      <li>Підібрані кастомні шрифти.</li>
+      <li>Всі чекбокси клікабельні.</li>
+      <li>Всі поля для вводу можна редагувати.</li>
+      <li>Сторінка реагує на зміни розміру екрану (без повноцінної адаптивної верстки).</li>
+    </ol>
+
+    <section class="planner" aria-label="Тижневий планер">
+      <header class="planner-header">
+        <div class="brand">WEEKLY PLAN</div>
+        <label class="line-field">WEEK OF <input aria-label="Тиждень від"></label>
+        <label class="line-field habit">HEALTHY HABIT <input aria-label="Корисна звичка"></label>
+        <div class="checks">
+          <label><span>ROCKED IT</span><input type="checkbox" aria-label="Rocked it"></label>
+          <label><span>ROOM FOR IMPROVEMENT</span><input type="checkbox" aria-label="Room for improvement"></label>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <section class="task-list goals">
+          <h3>TOP 3 GOALS</h3>
+          <label class="task"><input type="checkbox" aria-label="Ціль 1"><input class="task-text" aria-label="Текст цілі 1"></label><label class="task"><input type="checkbox" aria-label="Ціль 2"><input class="task-text" aria-label="Текст цілі 2"></label><label class="task"><input type="checkbox" aria-label="Ціль 3"><input class="task-text" aria-label="Текст цілі 3"></label>
+        </section>
+        <section class="task-list everything">
+          <h3>EVERYTHING ELSE</h3>
+          <label class="task"><input type="checkbox" aria-label="Завдання 1"><input class="task-text" aria-label="Текст завдання 1"></label><label class="task"><input type="checkbox" aria-label="Завдання 2"><input class="task-text" aria-label="Текст завдання 2"></label><label class="task"><input type="checkbox" aria-label="Завдання 3"><input class="task-text" aria-label="Текст завдання 3"></label><label class="task"><input type="checkbox" aria-label="Завдання 4"><input class="task-text" aria-label="Текст завдання 4"></label><label class="task"><input type="checkbox" aria-label="Завдання 5"><input class="task-text" aria-label="Текст завдання 5"></label><label class="task"><input type="checkbox" aria-label="Завдання 6"><input class="task-text" aria-label="Текст завдання 6"></label><label class="task"><input type="checkbox" aria-label="Завдання 7"><input class="task-text" aria-label="Текст завдання 7"></label><label class="task"><input type="checkbox" aria-label="Завдання 8"><input class="task-text" aria-label="Текст завдання 8"></label><label class="task"><input type="checkbox" aria-label="Завдання 9"><input class="task-text" aria-label="Текст завдання 9"></label><label class="task"><input type="checkbox" aria-label="Завдання 10"><input class="task-text" aria-label="Текст завдання 10"></label><label class="task"><input type="checkbox" aria-label="Завдання 11"><input class="task-text" aria-label="Текст завдання 11"></label><label class="task"><input type="checkbox" aria-label="Завдання 12"><input class="task-text" aria-label="Текст завдання 12"></label><label class="task"><input type="checkbox" aria-label="Завдання 13"><input class="task-text" aria-label="Текст завдання 13"></label>
+        </section>
+        <section class="task-list next-week">
+          <h3>NEXT WEEK</h3>
+          <label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 1"><input class="task-text" aria-label="Текст завдання наступного тижня 1"></label><label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 2"><input class="task-text" aria-label="Текст завдання наступного тижня 2"></label><label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 3"><input class="task-text" aria-label="Текст завдання наступного тижня 3"></label><label class="task"><input type="checkbox" aria-label="Завдання наступного тижня 4"><input class="task-text" aria-label="Текст завдання наступного тижня 4"></label>
+        </section>
+      </aside>
+      <section class="day monday"><h3>MONDAY <input type="checkbox" aria-label="Понеділок виконано"></h3><textarea aria-label="План на понеділок"></textarea></section>
+      <section class="day tuesday"><h3>TUESDAY <input type="checkbox" aria-label="Вівторок виконано"></h3><textarea aria-label="План на вівторок"></textarea></section>
+      <section class="day wednesday"><h3>WEDNESDAY <input type="checkbox" aria-label="Середа виконано"></h3><textarea aria-label="План на середу"></textarea></section>
+      <section class="day thursday"><h3>THURSDAY <input type="checkbox" aria-label="Четвер виконано"></h3><textarea aria-label="План на четвер"></textarea></section>
+      <section class="day friday"><h3>FRIDAY <input type="checkbox" aria-label="П'ятниця виконано"></h3><textarea aria-label="План на п'ятницю"></textarea></section>
+      <section class="day saturday"><h3>SATURDAY <input type="checkbox" aria-label="Субота виконано"></h3><textarea aria-label="План на суботу"></textarea></section>
+      <section class="day sunday"><h3>SUNDAY <input type="checkbox" aria-label="Неділя виконано"></h3><textarea aria-label="План на неділю"></textarea></section>
+      <footer class="planner-footer"></footer>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll('.planner input[type="text"], .planner textarea, .planner input:not([type])').forEach(field => {
+      field.addEventListener('input', () => field.classList.add('edited'));
+    });
+  </script>
+</body>
+</html>
