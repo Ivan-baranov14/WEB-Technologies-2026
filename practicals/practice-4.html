@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична робота №4 — Fullsize клавіатура</title>
+  <link rel="stylesheet" href="practice-4.css">
+</head>
+<body>
+  <header class="page-header">
+    <a class="back-link" href="../index.html">← На головну</a>
+    <p class="eyebrow">WEB TECHNOLOGIES · CSS GRID</p>
+    <h1>Практична робота №4</h1>
+    <p class="subtitle">Fullsize клавіатура</p>
+    <p class="description">Інтерактивний макет повнорозмірної клавіатури, створений за допомогою CSS Grid.</p>
+  </header>
+
+  <main>
+    <section class="keyboard-section" aria-label="Інтерактивна клавіатура">
+      <div class="keyboard-top">
+        <div class="brand-mark"><span class="brand-dot"></span> KEYBOARD<span class="brand-muted"> / 104</span></div>
+        <div class="status"><span class="status-light"></span> Інтерактивна демонстрація</div>
+      </div>
+
+      <div class="keyboard">
+        <div class="main-board">
+          <div class="key-row function-row">
+            <button class="key esc" data-key="Escape">Esc</button>
+            <span class="row-gap"></span>
+            <button class="key" data-key="F1">F1</button><button class="key" data-key="F2">F2</button><button class="key" data-key="F3">F3</button><button class="key" data-key="F4">F4</button>
+            <span class="row-gap"></span>
+            <button class="key" data-key="F5">F5</button><button class="key" data-key="F6">F6</button><button class="key" data-key="F7">F7</button><button class="key" data-key="F8">F8</button>
+            <span class="row-gap"></span>
+            <button class="key" data-key="F9">F9</button><button class="key" data-key="F10">F10</button><button class="key" data-key="F11">F11</button><button class="key" data-key="F12">F12</button>
+          </div>
+          <div class="key-row number-row">
+            <button class="key" data-key="`">~<br>`</button><button class="key" data-key="1">!<br>1</button><button class="key" data-key="2">@<br>2</button><button class="key" data-key="3">#<br>3</button><button class="key" data-key="4">$<br>4</button><button class="key" data-key="5">%<br>5</button><button class="key" data-key="6">^<br>6</button><button class="key" data-key="7">&amp;<br>7</button><button class="key" data-key="8">*<br>8</button><button class="key" data-key="9">(<br>9</button><button class="key" data-key="0">)<br>0</button><button class="key" data-key="-">_<br>-</button><button class="key" data-key="=">+<br>=</button><button class="key wide" data-key="Backspace">Backspace</button>
+          </div>
+          <div class="key-row">
+            <button class="key wide" data-key="Tab">Tab</button><button class="key" data-key="Q">Q</button><button class="key" data-key="W">W</button><button class="key" data-key="E">E</button><button class="key" data-key="R">R</button><button class="key" data-key="T">T</button><button class="key" data-key="Y">Y</button><button class="key" data-key="U">U</button><button class="key" data-key="I">I</button><button class="key" data-key="O">O</button><button class="key" data-key="P">P</button><button class="key" data-key="[">{<br>[</button><button class="key" data-key="]">}<br>]</button><button class="key" data-key="\\">|<br>\\</button>
+          </div>
+          <div class="key-row">
+            <button class="key extra-wide" data-key="CapsLock">Caps Lock</button><button class="key" data-key="A">A</button><button class="key" data-key="S">S</button><button class="key" data-key="D">D</button><button class="key" data-key="F">F</button><button class="key" data-key="G">G</button><button class="key" data-key="H">H</button><button class="key" data-key="J">J</button><button class="key" data-key="K">K</button><button class="key" data-key="L">L</button><button class="key" data-key=";">:<br>;</button><button class="key" data-key="'">&quot;<br>'</button><button class="key wide" data-key="Enter">Enter</button>
+          </div>
+          <div class="key-row">
+            <button class="key extra-wide" data-key="Shift">⇧ Shift</button><button class="key" data-key="Z">Z</button><button class="key" data-key="X">X</button><button class="key" data-key="C">C</button><button class="key" data-key="V">V</button><button class="key" data-key="B">B</button><button class="key" data-key="N">N</button><button class="key" data-key="M">M</button><button class="key" data-key=",">&lt;<br>,</button><button class="key" data-key=".">&gt;<br>.</button><button class="key" data-key="/">?<br>/</button><button class="key extra-wide" data-key="Shift">⇧ Shift</button>
+          </div>
+          <div class="key-row bottom-row">
+            <button class="key" data-key="Control">Ctrl</button><button class="key" data-key="Meta">⊞</button><button class="key" data-key="Alt">Alt</button><button class="key space" data-key=" ">Пробіл</button><button class="key" data-key="AltGraph">Alt Gr</button><button class="key" data-key="ContextMenu">☰</button><button class="key" data-key="Control">Ctrl</button>
+          </div>
+        </div>
+
+        <div class="nav-board">
+          <div class="mini-keys">
+            <button class="key small" data-key="PrintScreen">PrtSc</button><button class="key small" data-key="ScrollLock">ScrLk</button><button class="key small" data-key="Pause">Pause</button>
+          </div>
+          <div class="nav-grid">
+            <button class="key" data-key="Insert">Ins</button><button class="key" data-key="Home">Home</button><button class="key" data-key="PageUp">PgUp</button>
+            <button class="key" data-key="Delete">Del</button><button class="key" data-key="End">End</button><button class="key" data-key="PageDown">PgDn</button>
+          </div>
+          <div class="arrow-grid">
+            <span></span><button class="key" data-key="ArrowUp">↑</button><span></span>
+            <button class="key" data-key="ArrowLeft">←</button><button class="key" data-key="ArrowDown">↓</button><button class="key" data-key="ArrowRight">→</button>
+          </div>
+        </div>
+
+        <div class="numpad">
+          <div class="mini-keys">
+            <button class="key small" data-key="NumLock">Num</button><button class="key small" data-key="/">/</button><button class="key small" data-key="*">*</button><button class="key small" data-key="-">−</button>
+          </div>
+          <div class="numpad-grid">
+            <button class="key" data-key="7">7</button><button class="key" data-key="8">8</button><button class="key" data-key="9">9</button><button class="key tall" data-key="+">+</button>
+            <button class="key" data-key="4">4</button><button class="key" data-key="5">5</button><button class="key" data-key="6">6</button>
+            <button class="key" data-key="1">1</button><button class="key" data-key="2">2</button><button class="key" data-key="3">3</button><button class="key tall" data-key="Enter">Enter</button>
+            <button class="key double" data-key="0">0</button><button class="key" data-key=".">.</button>
+          </div>
+        </div>
+      </div>
+      <div class="keyboard-footer">
+        <span><i class="legend-dot normal-dot"></i> Звичайна клавіша</span>
+        <span><i class="legend-dot hover-dot"></i> Наведіть курсор</span>
+        <span><i class="legend-dot selected-dot"></i> Натиснута клавіша</span>
+      </div>
+    </section>
+
+    <section class="help-panel">
+      <div><span class="help-icon">⌨</span><div><h2>Спробуйте клавіатуру</h2><p>Натискайте клавіші мишкою або фізичною клавіатурою. Стан натиснутих клавіш підсвічується.</p></div></div>
+      <button id="resetKeys" class="reset-button" type="button">Скинути підсвічування</button>
+    </section>
+    <p class="note">Навчальний макет. Фізичні клавіші не вводять текст і не виконують системних команд.</p>
+  </main>
+  <script>
+    const keys = [...document.querySelectorAll('.key[data-key]')];
+    const pressed = new Set();
+    function setKeyState(key, active) {
+      const match = keys.filter(button => button.dataset.key.toLowerCase() === key.toLowerCase());
+      match.forEach(button => button.classList.toggle('selected', active));
+    }
+    keys.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('selected');
+      });
+    });
+    document.addEventListener('keydown', event => {
+      if (event.repeat) return;
+      pressed.add(event.key);
+      setKeyState(event.key, true);
+    });
+    document.addEventListener('keyup', event => {
+      pressed.delete(event.key);
+      setKeyState(event.key, false);
+    });
+    window.addEventListener('blur', () => {
+      pressed.forEach(key => setKeyState(key, false));
+      pressed.clear();
+    });
+    document.getElementById('resetKeys').addEventListener('click', () => {
+      keys.forEach(button => button.classList.remove('selected'));
+      pressed.clear();
+    });
+  </script>
+</body>
+</html>
