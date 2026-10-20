@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №3 — YouTube Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-area">
+      <button class="icon-button menu-button" aria-label="Відкрити меню">☰</button>
+      <a class="brand" href="#" aria-label="YouTube головна"><span class="brand-play">▶</span><strong>YouTube</strong><sup>UA</sup></a>
+    </div>
+    <form class="search" role="search">
+      <input type="search" placeholder="Введіть запит" aria-label="Пошук">
+      <button type="button" aria-label="Пошук">⌕</button>
+    </form>
+    <div class="top-actions">
+      <button class="icon-button" aria-label="Голосовий пошук">🎙</button>
+      <button class="icon-button create-button">＋ Створити</button>
+      <button class="icon-button" aria-label="Сповіщення">♧</button>
+      <div class="avatar" aria-label="Профіль">І</div>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <aside class="sidebar" aria-label="Бічна навігація">
+      <a class="side-link active" href="#"><span>⌂</span>Головна</a>
+      <a class="side-link" href="#"><span>▶</span>YouTube Shorts</a>
+      <a class="side-link" href="#"><span>▣</span>Підписки</a>
+      <hr>
+      <a class="side-link section-title" href="#">Ви <span>›</span></a>
+      <a class="side-link" href="#"><span>◴</span>Історія</a>
+      <a class="side-link" href="#"><span>▤</span>Плейлисти</a>
+      <a class="side-link" href="#"><span>▶</span>Ваші відео</a>
+      <a class="side-link" href="#"><span>◷</span>Переглянути пізніше</a>
+      <hr>
+      <p class="sidebar-heading">Навігатор</p>
+      <a class="side-link" href="#"><span>🎵</span>Музика</a>
+      <a class="side-link" href="#"><span>🎮</span>Ігри</a>
+      <a class="side-link" href="#"><span>📰</span>Новини</a>
+    </aside>
+
+    <main class="content">
+      <nav class="filters" aria-label="Категорії">
+        <a class="filter active" href="#">Усі</a>
+        <a class="filter" href="#">Музика</a>
+        <a class="filter" href="#">Ігри</a>
+        <a class="filter" href="#">Прямі трансляції</a>
+        <a class="filter" href="#">Новини</a>
+        <a class="filter" href="#">Комп'ютери</a>
+        <a class="filter" href="#">Мікси</a>
+        <a class="filter" href="#">Нещодавно опубліковані</a>
+      </nav>
+
+      <section class="video-grid" aria-label="Рекомендовані відео">
+        <article class="video-card">
+          <div class="thumbnail thumb-tech"><span class="thumb-label">PC BUILD</span><span class="thumb-main">НОВИЙ ПК</span><span class="duration">18:42</span></div>
+          <div class="video-info"><div class="channel-avatar purple">T</div><div><h2>Збираємо ігровий ПК у 2026 році: що обрати?</h2><p>Tech Україна</p><p>124 тис. переглядів · 2 дні тому</p></div><button class="more" aria-label="Більше">⋮</button></div>
+        </article>
+        <article class="video-card">
+          <div class="thumbnail thumb-game"><span class="thumb-label">GAMEPLAY</span><span class="thumb-main">НОВИЙ СВІТ</span><span class="duration">32:16</span></div>
+          <div class="video-info"><div class="channel-avatar red">G</div><div><h2>Найочікуваніші ігри року — у що пограти?</h2><p>GameSpace</p><p>86 тис. переглядів · 1 день тому</p></div><button class="more" aria-label="Більше">⋮</button></div>
+        </article>
+        <article class="video-card">
+          <div class="thumbnail thumb-music"><span class="thumb-label">PLAYLIST</span><span class="thumb-main">CHILL<br>MIX</span><span class="duration">1:02:08</span></div>
+          <div class="video-info"><div class="channel-avatar green">♫</div><div><h2>Музика для навчання та концентрації 🎧</h2><p>Lo-Fi Station</p><p>2,1 млн переглядів · 3 тижні тому</p></div><button class="more" aria-label="Більше">⋮</button></div>
+        </article>
+        <article class="video-card">
+          <div class="thumbnail thumb-linux"><span class="thumb-label">LINUX</span><span class="thumb-main">ПЕРШІ КРОКИ</span><span class="duration">14:55</span></div>
+          <div class="video-info"><div class="channel-avatar orange">⌘</div><div><h2>Linux для початківців: основні команди термінала</h2><p>SysAdmin Lab</p><p>42 тис. переглядів · 5 днів тому</p></div><button class="more" aria-label="Більше">⋮</button></div>
+        </article>
+        <article class="video-card">
+          <div class="thumbnail thumb-travel"><span class="thumb-label">TRAVEL</span><span class="thumb-main">ВАРШАВА</span><span class="duration">21:37</span></div>
+          <div class="video-info"><div class="channel-avatar blue">V</div><div><h2>Вихідні у Варшаві: цікаві місця та витрати</h2><p>Мандруй просто</p><p>19 тис. переглядів · 6 днів тому</p></div><button class="more" aria-label="Більше">⋮</button></div>
+        </article>
+        <article class="video-card">
+          <div class="thumbnail thumb-science"><span class="thumb-label">TECH</span><span class="thumb-main">ЯК ЦЕ ПРАЦЮЄ?</span><span class="duration">11:09</span></div>
+          <div class="video-info"><div class="channel-avatar pink">S</div><div><h2>Як насправді працює інтернет? Пояснення просто</h2><p>Наука поруч</p><p>310 тис. переглядів · 1 тиждень тому</p></div><button class="more" aria-label="Більше">⋮</button></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
