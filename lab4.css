@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap');
+* { box-sizing: border-box; }
+:root { font-family: 'Roboto', Arial, sans-serif; color: #111; background: #fff; }
+body { margin: 0; }
+.page { width: min(100% - 40px, 980px); margin: 0 auto; padding: 20px 0 36px; }
+.back-link { color: #52636d; font-size: 13px; text-decoration: none; }
+h1 { margin: 18px 0 3px; font: 400 clamp(28px, 4vw, 38px)/1.1 Georgia, serif; }
+.subtitle { margin: 0 0 14px; font: 18px Georgia, serif; }
+h2 { margin: 0 0 8px; font: 20px Georgia, serif; }
+.requirements { margin: 0 0 42px; padding-left: 47px; font: 17px/1.35 Georgia, serif; }
+.planner { display: grid; grid-template-columns: 28% repeat(3, minmax(0, 1fr)); grid-template-rows: 54px 1fr 1fr 10px; grid-template-areas: "header header header header" "sidebar mon tue wed" "sidebar thu fri sat" "footer footer footer footer"; min-height: 530px; border: 4px solid #d0d0d0; box-shadow: 0 0 0 1px #aaa; background: #fff; }
+.planner-header { grid-area: header; display: grid; grid-template-columns: 1.45fr .9fr 1.2fr 1.1fr; align-items: end; gap: 12px; padding: 5px 12px 6px; border-bottom: 1px solid #888; min-width: 0; }
+.brand { font: 500 clamp(22px, 3.2vw, 39px)/1 'Oswald', sans-serif; color: #555; white-space: nowrap; letter-spacing: -1px; }
+.line-field { display: flex; align-items: end; gap: 5px; padding-bottom: 3px; font-size: 9px; font-weight: 700; white-space: nowrap; }
+.line-field input { min-width: 0; width: 100%; border: 0; border-bottom: 1px solid #aaa; outline: 0; background: transparent; font: 12px 'Roboto', sans-serif; }
+.checks { display: grid; gap: 4px; justify-self: end; font-size: 8px; font-weight: 700; white-space: nowrap; }
+.checks label { display: flex; align-items: center; justify-content: flex-end; gap: 5px; }
+input[type="checkbox"] { width: 10px; height: 10px; margin: 0; accent-color: #777; cursor: pointer; flex: 0 0 auto; }
+.sidebar { grid-area: sidebar; display: grid; grid-template-rows: auto 1fr auto; min-height: 0; padding: 8px 10px 4px 16px; border-right: 1px solid #888; }
+.task-list h3, .day h3 { margin: 0; font-size: 9px; line-height: 1.4; font-weight: 700; }
+.task { display: flex; align-items: center; gap: 5px; height: 17px; }
+.task-text { display: block; min-width: 0; width: 100%; height: 16px; padding: 0 2px; border: 0; border-bottom: 1px solid #bbb; outline: 0; background: transparent; font: 10px 'Roboto', sans-serif; }
+.task-text:focus, .line-field input:focus { border-bottom-color: #444; background: #fafafa; }
+.everything { padding-top: 12px; }
+.next-week { padding-top: 10px; }
+.day { display: grid; grid-template-rows: 22px 1fr; min-width: 0; min-height: 0; border-right: 1px solid #888; border-bottom: 1px solid #888; }
+.day h3 { display: flex; justify-content: center; align-items: center; position: relative; border-bottom: 1px solid #ccc; text-align: center; }
+.day h3 input { position: absolute; right: 6px; top: 5px; }
+.day textarea { width: 100%; height: 100%; min-height: 0; resize: none; padding: 7px; border: 0; outline: 0; background: transparent; font: 12px/1.5 'Roboto', sans-serif; }
+.day textarea:focus { background: #fffef8; }
+.monday { grid-area: mon; }
+.tuesday { grid-area: tue; }
+.wednesday { grid-area: wed; }
+.thursday { grid-area: thu; }
+.friday { grid-area: fri; }
+.saturday { grid-area: sat; }
+.sunday { grid-area: sun; }
+.planner { grid-template-areas: "header header header header" "sidebar mon tue wed" "sidebar thu fri sat" "footer footer footer footer"; }
+.saturday { grid-row: 3; grid-column: 4; height: 50%; }
+.sunday { grid-row: 3; grid-column: 4; align-self: end; height: 50%; border-top: 1px solid #888; }
+.planner-footer { grid-area: footer; background: linear-gradient(#aaa,#ddd); border-top: 1px solid #888; }
+@media (max-width: 700px) {
+  .page { width: calc(100% - 20px); }
+  .requirements { margin-bottom: 25px; }
+  .planner { min-height: 460px; grid-template-rows: 58px 1fr 1fr 8px; }
+  .planner-header { grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; }
+  .brand { font-size: clamp(17px, 3vw, 27px); }
+  .checks { grid-column: 1 / -1; display: flex; gap: 10px; justify-self: end; }
+  .line-field { font-size: 7px; }
+  .sidebar { padding-left: 6px; padding-right: 5px; }
+  .task-list h3, .day h3 { font-size: 7px; }
+  .task { height: 15px; }
+  .task-text { height: 14px; }
+}
